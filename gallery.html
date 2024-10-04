@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gallery</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 36px;
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 15px;
+      }
+
+      .gallery-grid img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      }
+
+      .gallery-grid img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #2ecc71;
+        color: white;
+        margin-top: 40px;
+        font-size: 14px;
+        border-top: 2px solid #27ae60;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <h1>Photo Gallery</h1>
+
+      <!-- Gallery Section -->
+      <div class="gallery-grid">
+        <img src="Ray.jpeg" alt="Gallery Image 1" />
+        <img src="2.jpeg" alt="Gallery Image 2" />
+        <img src="3.jpeg" alt="Gallery Image 3" />
+        <img src="4.jpeg" alt="Gallery Image 4" />
+        <img src="5.jfif" alt="Gallery Image 5" />
+        <img src="6.jfif" alt="Gallery Image 6" />
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>&copy; 2024 Ray Virana Rajessa | All Rights Reserved</footer>
+  </body>
+</html>
